@@ -6,9 +6,9 @@
 
 
 
-### Dias 27/10/2021 e 28/10/2021
+### Dias 27/10/2021 , 28/10/2021 e 29/10/2021
 
-### Projeto de ensino do Profº Jonathan.
+### Projeto de ensino do Profº Jonathan, e exercício em grupo.
 
 ### Projeto usando Spring, Maven, Toncat e BDH2.
 
@@ -26,21 +26,27 @@ ApiApplication.java
 
 Classe principal da aplicação, onde instanciamos o  BD. 
 
-Implementa de UsuarioRepository e CommandLineRunner (que e uma implementação Java).
+Exporta de UsuarioRepository e ProdutoRepository. E Implementa de CommandLineRunner (que e uma implementação Java).
+
+E passa as informações para salvar nos arrays nos banco. 
 
 
 
 ## Pacote api.controllers:
 
-UsuarioController.java
+UsuarioController.java e ProdutoController.java
 
-Classe que implementa os métodos CRUD de serviço criado na classe UsuarioService.java
+UsuarioController.java (path= "/usuarios")
+
+Produto.Controller.java (path= "/produtos")
+
+Classe que implementa os métodos CRUD de serviço criado nas classes UsuarioService.java e ProdutoService.Java.
 
 
 
 ## Pacote api.model:
 
-Usuario.java
+Usuario.java e Produto.java
 
 Classe de declaração dos atributos, dos getters e setters,  do constructors e do equals e hashcode.
 
@@ -48,7 +54,7 @@ Classe de declaração dos atributos, dos getters e setters,  do constructors e 
 
 ## Pacote api.repositories:
 
-UsuarioRepository.java
+UsuarioRepository.java e ProdutoRepository.java
 
 Interface que está estendendo de JpaRepository (que e uma implementação Java), e também serve como repositório da aplicação. 
 
@@ -56,11 +62,11 @@ Interface que está estendendo de JpaRepository (que e uma implementação Java)
 
 ## Pacote api.service:
 
-UsuarioService.java
+UsuarioService.java e ProdutoService.java
 
 Classe que implementa os serviços de busca do objeto, update, create e delete.
 
-A mesma implementa de UsuarioRepository.java.
+A mesma implementa de UsuarioRepository.java para Usuário e de ProdutoService.java para Produto. 
 
 
 
