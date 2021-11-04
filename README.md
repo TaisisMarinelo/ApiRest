@@ -2,7 +2,7 @@
 
 ## Turma 1
 
-#### Desenvolvedor Aluna Taisis
+#### Desenvolvedora Aluna Taisis
 
 
 
